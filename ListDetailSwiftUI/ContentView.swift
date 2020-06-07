@@ -10,8 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-    }
+            VStack(alignment: .leading) {
+                Text("Your Library")
+                    .bold()
+                    .font(.system(size: 24.0))
+                    .padding(.leading)
+                    .padding(.top)
+                BookDetailView()
+                BookListListView()
+            }
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
